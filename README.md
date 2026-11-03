@@ -63,8 +63,8 @@ Both participants need the modified client and access to the same test service. 
 
 ## Co-authors
 
-- [gk767](https://github.com/gk767)
-- [developer6758](https://github.com/developer6758)
+- [gk767](https://github.com/gk767) · [@ofthalot](https://t.me/ofthalot)
+- [developer6758](https://github.com/developer6758) · [@vivapot](https://t.me/vivapot)
 
 ## License and attribution
 

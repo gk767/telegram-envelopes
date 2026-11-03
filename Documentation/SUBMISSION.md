@@ -1,13 +1,21 @@
-# Suggested Telegram Designers submission
+# Telegram Designers submission copy
 
-**Envelopes for Telegram iOS**
+✉️ **Envelopes — Send Money in Chat**
 
-Send an envelope directly in a private chat. Choose an amount, add a note and an optional opening effect. The recipient opens it to reveal the amount, while the sender sees it unfold in the same chat.
+Send Gram or USDT in an envelope right inside a private chat. Add a message and choose an opening effect. The recipient taps to reveal the amount, while both people see the envelope unfold and selected emoji spread across the chat.
 
-Native Swift/UIKit implementation with Telegram attachment and message-card integration, shared envelope artwork, recipient-only opening, idempotent state transitions and a reproducible two-account test service.
+Native iOS prototype with simulated balances.
 
-Code and setup: https://github.com/gk767/telegram-envelopes
+By [@ofthalot](https://t.me/ofthalot) and [@vivapot](https://t.me/vivapot) · [Source Code](https://github.com/gk767/telegram-envelopes)
 
-Animation preview: Media/opening-effect.mp4 (shared rendering component, without private chats). Add the approved final full-app send/open video before the public channel submission.
+## Submission links
 
-The current wallet service uses simulated balances. Production integration needs Telegram's own message and settlement APIs. This is an unofficial feature proposal.
+- Source and README: https://github.com/gk767/telegram-envelopes
+- Build and two-account setup: https://github.com/gk767/telegram-envelopes/blob/main/Documentation/BUILD-AND-RUN.md
+- Integration architecture: https://github.com/gk767/telegram-envelopes/blob/main/Documentation/INTEGRATION.md
+- Validation and limitations: https://github.com/gk767/telegram-envelopes/blob/main/Documentation/VALIDATION.md
+- Optional removable filming overlay: https://github.com/gk767/telegram-envelopes/tree/main/Optional/TouchIndicators
+
+## Before sending
+
+Keep the repository private until the owner explicitly asks to make it public. Attach the final approved full-app video to the channel submission; the repository currently includes only an isolated opening-animation preview. Private chat recordings have not been approved for upload. This text is prepared for the owner to submit, not automatically sent to Telegram.
