@@ -1,0 +1,14 @@
+{
+  "filmingBuild": "10018",
+  "coreBuild": "10016",
+  "corePatchSha256": "87d3e14bc3c8709bb716c783144464e1848b0a0522526efdb86c377df5583b47",
+  "files": {
+    "BUILD": "27bc937eb2107af319ac84344d2ed82251dc57c0c739f2b11321ca68ab31de92",
+    "Sources/DemoTouchIndicators.swift": "c78b85b8fb63ce3edf206c435518b8cde783eab679b667f1d44e87ae31ab9e0d",
+    "integration.patch": "d87f0cc747a4ebfb5064bb6153af91e7f8e472eb4435cdf82a927ebc9b5e7f2c"
+  },
+  "defaultEnabled": false,
+  "buildGate": "Debug Simulator only",
+  "runtimeDisableArgument": "-DisableDemoTouches",
+  "privateChatRecordingsIncluded": false
+}

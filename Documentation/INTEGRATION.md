@@ -31,3 +31,8 @@ Apply to the exact documented base first. A newer official checkout may require 
 ## Production boundary
 
 To ship officially, replace the text reference with Telegram's server-recognized media/message type and `EnvelopeService` with a trusted wallet/envelope API authenticated through Telegram. Define custody, settlement, refunds and abuse controls in that service. The Python ledger is a reproducible two-account prototype, not a production financial backend.
+
+
+## Optional filming aid
+
+`Optional/TouchIndicators/` is distributed separately from the core overlay and patch. Its integration patch adds a Debug-Simulator-only Bazel select and an observer after UIApplication.sendEvent. It draws CALayers without intercepting input. Runtime argument `-DisableDemoTouches` disables it immediately on next launch; reversing that small patch and deleting its module removes it entirely.

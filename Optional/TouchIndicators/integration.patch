@@ -1,0 +1,56 @@
+diff --git a/Telegram/BUILD b/Telegram/BUILD
+--- a/Telegram/BUILD
++++ b/Telegram/BUILD
+@@ -75,6 +75,19 @@
+     name = "disableExtensions",
+     build_setting_default = False,
+     visibility = ["//visibility:public"],
++)
++
++bool_flag(
++    name = "enableDemoTouchIndicators",
++    build_setting_default = False,
++    visibility = ["//visibility:public"],
++)
++
++config_setting(
++    name = "demoTouchIndicatorsEnabled",
++    values = {"compilation_mode": "dbg"},
++    constraint_values = ["@build_bazel_apple_support//constraints:simulator"],
++    flag_values = {":enableDemoTouchIndicators": "True"},
+ )
+ 
+ bool_flag(
+@@ -406,7 +419,10 @@
+     deps = [
+         "//submodules/TelegramUI:TelegramUI",
+         "//third-party/boringssl:crypto",
+-    ],
++    ] + select({
++        ":demoTouchIndicatorsEnabled": ["//Telegram/DemoTouchIndicators"],
++        "//conditions:default": [],
++    }),
+ )
+ 
+ plist_fragment(
+diff --git a/Telegram/Telegram-iOS/Application.swift b/Telegram/Telegram-iOS/Application.swift
+--- a/Telegram/Telegram-iOS/Application.swift
++++ b/Telegram/Telegram-iOS/Application.swift
+@@ -1,7 +1,17 @@
+ import UIKit
++#if targetEnvironment(simulator) && canImport(DemoTouchIndicators)
++import DemoTouchIndicators
++#endif
+ 
+ @objc(Application) class Application: UIApplication {
++    #if targetEnvironment(simulator) && canImport(DemoTouchIndicators)
++    private let demoTouchIndicators = DemoTouchIndicators()
++    #endif
++
+     override func sendEvent(_ event: UIEvent) {
+         super.sendEvent(event)
++        #if targetEnvironment(simulator) && canImport(DemoTouchIndicators)
++        self.demoTouchIndicators.handle(event)
++        #endif
+     }
+ }

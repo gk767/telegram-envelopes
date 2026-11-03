@@ -22,3 +22,10 @@ Baseline: `fb0e62ba8a147f0821da6aa63c09da7d79a10111`, build 10016, 3 November 20
 ## Known limits
 
 Balances are test balances, not on-chain funds. Both users need this modified client and the same service. Sender opening follows polling rather than push. A crash in the narrow create/enqueue recovery window can leave two chat references to one UUID; service reserve/credit remains idempotent. There has been no signed physical-iPhone build or production wallet integration verification.
+
+
+## Optional filming build 10018
+
+The optional touch module was added separately in Optional/TouchIndicators; the original core patch and its 39-file manifest are unchanged. Full Telegram build 10018 succeeded in 51.312s and was installed on both dedicated Simulators, preserving account data. The installed main executable was compared against the fresh IPA, since this module links into the application rather than TelegramUI. SDK compilation checked the Application hook both with and without the module. The low-load wrapper was checked in default-off and explicit opt-in modes.
+
+The user selected the soft translucent circle, then requested a slightly darker fill and a release wave starting closer to the center with unchanged maximum size. The final version was accepted on the running Simulator. A private local recording was inspected for the held drag, touch release and return to an interactive chat; that recording is not included or uploaded. Physical-device and production wallet claims are unchanged.

@@ -10,7 +10,7 @@ A working Telegram-iOS feature prototype, implemented in Swift and UIKit with a 
 
 <img src="Media/opening-preview.png" width="440" alt="Shared envelope artwork and opening animation preview">
 
-This clip is an isolated preview of the shared rendering component from build 10013, with no private chat content. Current source is build 10016; the integrated picker now uses light-blue circular selection outlines. A final full-app send/open video will be added separately before submitting to Telegram Designers. The current animation preview does not show the entire two-account workflow.
+This clip is an isolated preview of the shared rendering component from build 10013, with no private chat content. Core source is build 10016; the optional filming build is 10018. The integrated picker now uses light-blue circular selection outlines. A final full-app send/open video will be added separately before submitting to Telegram Designers. The current animation preview does not show the entire two-account workflow.
 
 ## What it does
 
@@ -35,6 +35,10 @@ This clip is an isolated preview of the shared rendering component from build 10
 - [Integration architecture](Documentation/INTEGRATION.md)
 - [Build and two-account setup](Documentation/BUILD-AND-RUN.md)
 - [Validation and remaining limits](Documentation/VALIDATION.md)
+
+## Optional filming overlay
+
+[Optional/TouchIndicators](Optional/TouchIndicators) contains the removable soft touch circle and light release wave. It has its own source, Bazel target and integration/reversal patch. It is disabled by default and can link only into Debug Simulator builds. The core `changes.patch` and `Source/` stay independent of this filming aid. See the folder README to enable or remove it.
 
 ## Try it
 

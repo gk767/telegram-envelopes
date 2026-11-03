@@ -78,3 +78,8 @@ python3 tools/check_envelopes.py
 ```
 
 The Foundation package and Python service tests can also run from this submission's `Source/` directory. The static integration checker requires the full patched checkout. Passing package tests does not replace the full iOS build or manual UI checks.
+
+
+## Optional touch circles for recording
+
+The core build has no touch overlay. To reproduce filming build 10018, follow [Optional/TouchIndicators](../Optional/TouchIndicators/README.md), then use the low-load CLI command above with `ENVELOPE_TOUCH_INDICATORS=1` before `nice` and `--buildNumber=10018`. This is optional; remove its integration patch to keep the product code alone.

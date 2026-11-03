@@ -20,6 +20,8 @@ def arguments(args):
                     arg = prefix + '"1"'
                 previous = value
             result.append(arg)
+        if os.environ.get("ENVELOPE_TOUCH_INDICATORS") == "1":
+            result.append("--//Telegram:enableDemoTouchIndicators")
         args = result + ["--jobs=1", "--//Telegram:disableExtensions",
                          "--//Telegram:disableProvisioningProfiles",
                          "--noremote_upload_local_results"]
