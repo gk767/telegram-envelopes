@@ -1,5 +1,7 @@
 Envelopes for Telegram iOS — unofficial feature proposal.
 
+Feature co-authors: gk767 and developer6758.
+
 This package contains additions and modifications to Telegram-iOS.
 Telegram source code remains copyright its original authors; existing notices
 are retained. The target source baseline is:

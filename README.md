@@ -57,6 +57,11 @@ The native UI and cross-account test flow are implemented. **Balances are simula
 
 Both participants need the modified client and access to the same test service. Ordinary Telegram clients show the text transport reference instead of the native card. Production adoption requires an official message/media type, Telegram authentication and a real wallet settlement API. These boundaries are documented explicitly rather than presented as completed infrastructure.
 
+## Co-authors
+
+- [gk767](https://github.com/gk767)
+- [developer6758](https://github.com/developer6758)
+
 ## License and attribution
 
 GPL-2.0-or-later; see [LICENSE](LICENSE) and [NOTICE](NOTICE). Telegram integration code retains its upstream ownership. The original gift-card reference was [imogendes/make-an-offer](https://github.com/imogendes/make-an-offer). This repository does not include Telegram API credentials, wallet tokens, account databases or application binaries.
