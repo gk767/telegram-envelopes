@@ -1,0 +1,23 @@
+Envelopes for Telegram iOS — unofficial feature proposal.
+
+This package contains additions and modifications to Telegram-iOS.
+Telegram source code remains copyright its original authors; existing notices
+are retained. The target source baseline is:
+https://github.com/developer6758/Telegram-iOS/tree/fb0e62ba8a147f0821da6aa63c09da7d79a10111
+Official upstream: https://github.com/TelegramMessenger/Telegram-iOS
+
+Telegram identifies its iOS source license as GNU GPL version 2 or later:
+https://telegram.org/apps#source-code
+The additions in this submission are offered under GPL-2.0-or-later as well.
+See LICENSE for the GPL version 2 text. Separately licensed dependencies in
+the full Telegram checkout retain their own terms and are not redistributed here.
+
+Original gift-card architecture reference:
+https://github.com/imogendes/make-an-offer
+Submission packaging references (not copied source):
+https://github.com/patsoooo/telegram-voice-transcription
+https://github.com/riveauxmia/telegram-black-hole-delete
+
+The included video shows only the shared animation component. It contains no
+private chat recording. It does not represent a real cryptocurrency payment
+or an endorsement by Telegram.
